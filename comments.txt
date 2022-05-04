@@ -1,0 +1,15 @@
+98998 pointing
+99000 .
+99001 .
+99003 pointing
+99023 pointing
+99025 .
+99026 .
+99028 pointing
+99030 .
+99031 .
+99033 pointing
+99035 .
+99036 .
+99038 pointing
+99000_99036 detection

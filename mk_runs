@@ -17,8 +17,11 @@ on1="99000 99001 99025 99026 99030 99031 99035 99036"
 # bad ones to be fully removed from final combination
 on1b=""
 
+# pointing
+on2=""
 
-obsnums="$on1 $on1b"
+
+obsnums="$on1 $on1b on2"
 
 
 #                       create the run file for single obsnum runs, also incoorporate any obsnum specific arguments

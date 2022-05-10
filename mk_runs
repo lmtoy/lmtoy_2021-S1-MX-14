@@ -3,24 +3,28 @@
 #  edit and run this script to update the run scripts for the pipeline
 #
 
+common="dv=50 dw=100 restart=1 admit=0 extent=240 pix_list=0,1,2,3,4,5,6,7,8,9,10,11,12,13"
 common="dv=100 dw=400 restart=1 admit=0 extent=240 pix_list=1,2,3,4,5,7,8,9,10,11,12,13"
+common="dv=50 dw=1250 restart=1 admit=0 extent=240 pix_list=1,2,3,4,5,7,8,9,10,11,12,13"
+common="dv=100 dw=500 restart=1 admit=0 extent=240 pix_list=1,2,3,4,5,7,8,9,10,11,12,13"
 # arguably beam 2 could also be suspect in the sam eway as beam 6
 # but recoverable if we can mask out some channelss
-
+#  mask out this birdie from 218-221 km/s
+#  or use dv=50 dw=100, but then you would be missing all the other interesting line(s)
+# with dw=1250 it seems that V<-400 has weird dropping (!) Tsys bahavior
 
 project="2021-S1-MX-14"
 
 
 # good ones for the combination - each is about 440"
-on1="99000 99001 99025 99026 99030 99031 99035 99036  99382 99383 99385 99386 99390 99391 99393 99394"
+on1="99000 99001 99025 99026 99030 99031 99035 99036  99382 99383 99385 99386 99390 99391 99393 99394 99398 99399"
 # 
 
 # bad ones to be fully removed from final combination
 on1b=""
 
 # pointing
-on2="98998 99003 99023 99028 99033 99038" 
-
+on2="98998 99003 99023 99028 99033 99038   99380 99388 99396 99401"
 
 obsnums="$on1 $on1b $on2"
 

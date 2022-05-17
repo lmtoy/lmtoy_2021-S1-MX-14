@@ -4,7 +4,10 @@ More later.
 
 ## OBSNUM
 
-First night beams 14,15 really bad. 8 maps taken.
+First night beams 14,15 really bad. 8 maps taken. Not till 99561 did those two come back.
+beam 0 always bad -
+beam 5 sometimes a bit (check, we included it) - 
+beam 2 or 6 might have the birdy, but it's in the line region and doesn't affect baselining
 
 
 More detailed descriptions are in the file **mk_runs**.

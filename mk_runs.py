@@ -11,23 +11,24 @@ project="2021-S1-MX-14"
 
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
-on['L1157-B1'] = [99000, 99001, 99025, 99026, 99030, 99031, 99035, 99036,                 # 4-may   (all have bad 14,15 0,6 too)
-                  99382, 99383, 99385, 99386, 99390, 99391, 99393, 99394, 99398, 99399,   # 10-may  (all have bad 14,15 0,6 too)
-                  99561, 99562, 99564, 99565, 99569, 99570, 99572, 99573, 99579, 99580,   #         (-0,-2,-6
-                         99582, 99583, 99589, 99590, 99592, 99593,                        # 14-may       6 might be ok
-                  99765, 99766, 99770, 99771, 99776, 99777,-99778,                        # 17-may
+on['L1157-B1'] = [99000, 99001, 99025, 99026, 99030, 99031, 99035, 99036,                 # 4-may   (all have bad 14,15 0 too)
+                  99382, 99383, 99385, 99386, 99390, 99391, 99393, 99394, 99398, 99399,   # 10-may  (all have bad 14,15 0 too)
+                  99561, 99562, 99564, 99565, 99569,-99570,-99572,-99573, 99579, 99580,   #         (-0, 5?)
+                         99582, 99583, 99589, 99590, 99592, 99593,                        # 14-may      
+                  99765, 99766, 99770, 99771, 99776, 99777,-99778,                        # 17-may   -0,-2?,-5?
                  ]
 
 #        common parameters per source on the first dryrun (run1, run2)
 pars1 = {}
 pars1['L1157-B1'] = "dv=250 dw=400 extent=240 edge=1"
-# at this setting beam 2 often has a birdie
+# at this setting beam 2 often has a birdie at ~220, thus dv=250 should be preventing it in the baseline
+# dw=400 might start to show the CO filter problem, use smaller?
 
 #        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}
-pars2['L1157-B1'] = "pix_list=1,3,4,6,7,8,9,10,11,12,13,14,15"
+pars2['L1157-B1'] = "pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"
 # 99286-99538 has bad beams 14,15
-# birdie in beam 2
+# birdie in beam 2 - use a better b_
 
 # below here no need to change code
 # ========================================================================

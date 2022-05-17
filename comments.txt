@@ -15,8 +15,9 @@
 
 99778 partial map
 
-99000_99036 Night-1
-99382_99399 Night-2
-99000_99399
+99000_99036 Night-1 ok
+99382_99399 Night-2 ok
+99000_99399 bad-corner
+99000_99593 bad-corner
 99000_99778 ALL SO FAR
 

@@ -61,23 +61,28 @@ for s in on.keys():
 
 run1  = '%s.run1'  % project
 run1a = '%s.run1a' % project
+run1b = '%s.run1b' % project
 run2  = '%s.run2' % project
 run2a = '%s.run2a' % project
 
 fp1 = open(run1,  "w")
 fp2 = open(run1a, "w")
-fp3 = open(run2,  "w")
-fp4 = open(run2a, "w")
+fp3 = open(run1b, "w")
+
+fp4 = open(run2,  "w")
+fp5 = open(run2a, "w")
 
 #                           single obsnum
 n1 = 0
 for s in on.keys():
     for o1 in on[s]:
         o = abs(o1)
-        cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 " % (o,s,pars1[s])
-        cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 %s" % (o,s,pars2[s], pars3[o])
+        cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 %s %s" % (o,s,pars1[s], pars2[s], pars3[o])
+        cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1" % (o,s,pars1[s])
+        cmd3 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 %s" % (o,s,pars2[s], pars3[o])
         fp1.write("%s\n" % cmd1)
         fp2.write("%s\n" % cmd2)
+        fp3.write("%s\n" % cmd3)
         n1 = n1 + 1
 
 #                           combination obsnums
@@ -94,10 +99,10 @@ for s in on.keys():
         else:
             obsnums = obsnums + ",%d" % o
     print('%s[%d/%d] :' % (s,n3,len(on[s])), obsnums)
-    cmd3 = "SLpipeline.sh _s=%s admit=0 restart=1 obsnums=%s" % (s, obsnums)
-    cmd4 = "SLpipeline.sh _s=%s admit=1 srdp=1  obsnums=%s" % (s, obsnums)
-    fp3.write("%s\n" % cmd3)
+    cmd4 = "SLpipeline.sh _s=%s admit=0 restart=1 obsnums=%s" % (s, obsnums)
+    cmd5 = "SLpipeline.sh _s=%s admit=1 srdp=1  obsnums=%s" % (s, obsnums)
     fp4.write("%s\n" % cmd4)
+    fp5.write("%s\n" % cmd5)
     n2 = n2 + 1
 
 print("A proper re-run of %s should be in the following order:" % project)

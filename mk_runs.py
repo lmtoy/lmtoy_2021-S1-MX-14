@@ -17,19 +17,19 @@ on['L1157-B1'] = [99000, 99001, 99025, 99026, 99030, 99031, 99035, 99036,       
                          99582, 99583, 99589, 99590, 99592, 99593,                        #       
                   99765, 99766, 99770, 99771, 99776, 99777,-99778,                        # 17-may   -0,-2?,-5?
                   99901, 99902, 99906, 99907,                                             # 18-may
-                  100232, 100233, 100235, 100236, 100240, 100241, 100243, 100244,         # 24-may
+                  100232, 100233, 100235, 100236,-100240,-100241, 100243, 100244,         # 24-may
                           100248, 100249,
                  ]
 
 #        common parameters per source on the first dryrun (run1, run2)
 pars1 = {}
-pars1['L1157-B1'] = "dv=250 dw=400 extent=240 edge=1"
+pars1['L1157-B1'] = "dv=250 dw=500 extent=250"
 # at this setting beam 2 often has a birdie at ~220, thus dv=250 should be preventing it in the baseline
 # dw=400 might start to show the CO filter problem, use smaller?
 
 #        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}
-pars2['L1157-B1'] = "pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"
+pars2['L1157-B1'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 # 99286-99538 has bad beams 14,15
 # birdie in beam 2 - use a better b_
 

@@ -26,8 +26,10 @@ on['L1157-B1'] = [99000, 99001, 99025, 99026, 99030, 99031, 99035, 99036,       
 #        common parameters per source on the first dryrun (run1, run2)
 pars1 = {}
 pars1['L1157-B1'] = "dv=250 dw=500 extent=250"
+pars1['L1157-B1'] = "dv=250 dw=150 extent=250"
 # at this setting beam 2 often has a birdie at ~220, thus dv=250 should be preventing it in the baseline
 # dw=400 might start to show the CO filter problem, use smaller?
+# earlier data (e.g. 99382) have bad tsys v < -400
 
 #        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}

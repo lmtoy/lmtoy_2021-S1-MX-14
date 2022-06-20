@@ -40,8 +40,8 @@ pars2['L1157-B1'] = "pix_list=1,2,3,4,7,8,9,10,11,12,13,14,15"
 # below here no need to change code
 # ========================================================================
 
-#        helper function for populating obsnum dependant argument
-def getargs(obsnum):
+#        helper function for populating obsnum dependant argument -- deprecated
+def getargs3(obsnum):
     """ search for <obsnum>.args
     """
     f = "%d.args" % obsnum
@@ -55,13 +55,32 @@ def getargs(obsnum):
     else:
         return ""
 
-#        specific parameters per obsnum will be in files <obsnum>.args
+#        specific parameters per obsnum will be in files <obsnum>.args -- deprecated
 pars3 = {}
 for s in on.keys():
     for o1 in on[s]:
         o = abs(o1)
-        pars3[o] = getargs(o)
+        pars3[o] = getargs3(o)
 
+#        obsnum.args is alternative single file pars file to set individual parameters
+pars4 = {}
+if os.path.exists("obsnum.args"):
+    lines = open("obsnum.args").readlines()
+    for line in lines:
+        if line[0] == '#': continue
+        w = line.split()
+        pars4[int(w[0])] = w[1:]
+        print('PJT',w[0],w[1:])
+
+def getargs(obsnum):
+    """ search for <obsnum> in obsnum.args
+    """
+    args = ""
+    if obsnum in pars4.keys():
+        print("PJT2:",obsnum,pars4[obsnum])
+        for a in pars4[obsnum]:
+            args = args + " " + a
+    return args
 
 run1  = '%s.run1'  % project
 run1a = '%s.run1a' % project
@@ -81,9 +100,9 @@ n1 = 0
 for s in on.keys():
     for o1 in on[s]:
         o = abs(o1)
-        cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 %s %s" % (o,s,pars1[s], pars2[s], pars3[o])
+        cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 %s %s" % (o,s,pars1[s], pars2[s], getargs(o))
         cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1" % (o,s,pars1[s])
-        cmd3 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 %s" % (o,s,pars2[s], pars3[o])
+        cmd3 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 %s" % (o,s,pars2[s], getargs(o))
         fp1.write("%s\n" % cmd1)
         fp2.write("%s\n" % cmd2)
         fp3.write("%s\n" % cmd3)

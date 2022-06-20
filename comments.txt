@@ -14,6 +14,8 @@
 99038 pointing
 
 99382 -0,-6?,-12? -14,-15
+99385 peak streaks
+99393 peak streaks
 99399 -0,-6:,-14,-15
 
 99561 -0 -5?
@@ -24,7 +26,7 @@
 99570 some wavy - all bad?
 99572 wavy - all bad
 99573 wavy - all bad
-99579 -0
+99579 -0 bottom streak
 99580 -0,-5
 99582 -0,-5
 99583 -0, -5?
@@ -40,7 +42,7 @@
 99771 -0 -5?
 99776 -0
 99777 -0
-99778 partial map
+99778 bad / partial map (aborted?)
 
 99901 -0
 99902 -0

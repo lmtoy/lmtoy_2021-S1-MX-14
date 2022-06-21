@@ -34,6 +34,7 @@ pars1['L1157-B1'] = "dv=250 dw=150 extent=250"
 #        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}
 pars2['L1157-B1'] = "pix_list=1,3,4,7,8,9,10,11,12,13,14,15"
+pars2['L1157-B1'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15  birdies=1187"
 # 99286-99538 has bad beams 14,15
 # birdie in beam 2 - use a better b_
 

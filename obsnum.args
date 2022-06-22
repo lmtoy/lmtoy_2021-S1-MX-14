@@ -1,63 +1,62 @@
-99000  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99001  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99025  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99026  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99030  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99031  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99035  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99036  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99382  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99383  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99385  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99386  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13  birdies=1187
-99390  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99391  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99393  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99394  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99398  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
-99399  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=0
+99000  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99001  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99025  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99026  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99030  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99031  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99035  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99036  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99382  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99383  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99385  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99386  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99390  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99391  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99393  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99394  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99398  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
+99399  pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13 birdies=1187
 #
-99561  birdies=1188
-99562    birdies=0
-99564    birdies=0
-99565    birdies=0
-99569    birdies=0
-99570    birdies=0
-99572    birdies=0
-99573    birdies=0
-99579    birdies=0
-99580    birdies=0
-99582    birdies=0
-99583    birdies=0
-99589    birdies=0
-99590    birdies=0
-99592    birdies=0
-99593    birdies=0
+99561    birdies=1188
+99562    birdies=1188
+99564    birdies=1188
+99565    birdies=1188
+99569    birdies=1188
+99570    birdies=1188
+99572    birdies=1188
+99573    birdies=1188
+99579    birdies=1188
+99580    birdies=1188
+99582    birdies=1188
+99583    birdies=1188
+99589    birdies=1188
+99590    birdies=1188
+99592    birdies=1188
+99593    birdies=1188
 #
-99765    birdies=0
-99766    birdies=0
-99770    birdies=0
-99771    birdies=0
-99776    birdies=0
-99777    birdies=0
-99778    birdies=0
+99765    birdies=1188
+99766    birdies=1188
+99770    birdies=1188
+99771    birdies=1188
+99776    birdies=1188
+99777    birdies=1188
+99778    birdies=1188
 #
-99901    birdies=0
-99902    birdies=0
-99904    birdies=0
-99906    birdies=0
-99907    birdies=0
-99909    birdies=0
+99901    birdies=1188
+99902    birdies=1188
+99904    birdies=1188
+99906    birdies=1188
+99907    birdies=1188
 #
-100232   birdies=0
-100233   birdies=0
-100235   birdies=0
-100236   birdies=0
-100240   birdies=0
-100241   birdies=0
-100243   birdies=0
-100244   birdies=0
-100248   birdies=0
+100232   birdies=1188
+100233   birdies=1188
+100235   birdies=1188
+100236   birdies=1188
+100240   birdies=1188
+100241   birdies=1188
+100243   birdies=1188
+100244   birdies=1188
+100248   birdies=1188
 #
 100249  birdies=1189
 #

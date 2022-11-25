@@ -7,6 +7,15 @@
 import os
 import sys
 
+# in prep of the new lmtoy module
+try:
+    lmtoy = os.environ['LMTOY']
+    sys.path.append(lmtoy + '/lmtoy')
+    import runs
+except:
+    print("No LMTOY with runs.py")
+    sys.exit(0)
+
 project="2021-S1-MX-14"
 
 #        obsnums per source (make it negative if not added to the final combination)
@@ -37,6 +46,11 @@ pars2['L1157-B1'] = "pix_list=1,3,4,7,8,9,10,11,12,13,14,15"
 pars2['L1157-B1'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 # 99286-99538 has bad beams 14,15
 # for birdies, see obsnum.args
+
+runs.mk_runs(project, on, pars1, pars2)
+print("DONE")
+sys.exit(0)
+
 
 # below here no need to change code
 # ========================================================================

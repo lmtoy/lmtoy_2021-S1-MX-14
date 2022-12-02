@@ -1,66 +1,83 @@
+#   default is pix_list=-0,-5
 98998 pointing
-99000 -0,-14,-15
-99001 -0,-14,-15
-99003 pointing
-99023 pointing
-99025 .
-99026 .
-99028 pointing
-99030 .
-99031 .
-99033 pointing
-99035 .
-99036 -0,-6?,-14,-15
-99038 pointing
+99000 -0,-14,-15              # pix_list=-0,-14,-15 birdies=1187
+99001 -0,-14,-15              # pix_list=-0,-14,-15 birdies=1187
+99003 pointing            
+99023 pointing            
+99025 .                       # pix_list=-0,-14,-15 birdies=1187
+99026 .            	      # pix_list=-0,-14,-15 birdies=1187
+99028 pointing                
+99030 .             	      # pix_list=-0,-14,-15 birdies=1187
+99031 .             	      # pix_list=-0,-14,-15 birdies=1187
+99033 pointing                
+99035 .             	      # pix_list=-0,-14,-15 birdies=1187
+99036 -0,-6?,-14,-15          # pix_list=-0,-14,-15 birdies=1187
+99038 pointing            
 
-99382 -0,-6?,-12? -14,-15
-99385 peak streaks
-99393 peak streaks
-99399 -0,-6:,-14,-15
+99382 -0,-6?,-12? -14,-15     # pix_list=-0,-14,-15 birdies=1187
+99383 .		  	      # pix_list=-0,-14,-15 birdies=1187
+99385 peak streaks     	      # pix_list=-0,-14,-15 birdies=1187
+99386 .	      		      # pix_list=-0,-14,-15 birdies=1187
+99390 .	      		      # pix_list=-0,-14,-15 birdies=1187
+99391 .	      		      # pix_list=-0,-14,-15 birdies=1187
+99393 peak streaks     	      # pix_list=-0,-14,-15 birdies=1187
+99399 -0,-6:,-14,-15          # pix_list=-0,-14,-15 birdies=1187
 
 99561 -0 -5?
-99562 -0 -5?
-99564 -0
-99565 -0
-99569 -0
-99570 some wavy - all bad?
-99572 wavy - all bad
-99573 wavy - all bad
-99579 -0 bottom streak
-99580 -0,-5
-99582 -0,-5
-99583 -0, -5?
-99589 -0
-99590 -0, -5?
-99592 -0, -5?
-99593 -0, -5?
+99562 -0 -5?                  # birdies=1188
+99564 -0 		      # birdies=1188
+99565 -0		      # birdies=1188
+99569 -0		      # birdies=1188
+99570 some wavy - all BAD     # birdies=1188
+99572 wavy - all BAD   	      # birdies=1188
+99573 wavy - all BAD   	      # birdies=1188
+99579 -0 bottom streak        # birdies=1188
+99580 -0,-5   		      # birdies=1188
+99582 -0,-5   		      # birdies=1188
+99583 -0, -5?   	      # birdies=1188
+99589 -0   		      # birdies=1188
+99590 -0, -5?   	      # birdies=1188
+99592 -0, -5?   	      # birdies=1188
+99593 -0, -5?   	      # birdies=1188
 
 
-99765 -0 -5?
-99766 -0 -5?
-99770 -0
-99771 -0 -5?
-99776 -0
-99777 -0
-99778 bad / partial map (aborted?)
+99765 -0 -5?   		      # birdies=1188
+99766 -0 -5?   		      # birdies=1188
+99770 -0   		      # birdies=1188
+99771 -0 -5?   		      # birdies=1188
+99776 -0   		      # birdies=1188
+99777 -0   		      # birdies=1188
+99778 BAD / partial map       # birdies=1188
 
-99901 -0
-99902 -0
-99904 pointing -0
-99906 -0
-99907 -0, -5 getting stronger
-99909 pointing -0,-5
+99901 -0    	    	      # birdies=1188
+99902 -0   		      # birdies=1188
+99904 pointing -0   	      # birdies=1188
+99906 -0       		      # birdies=1188
+99907 -0, -5 getting stronger # birdies=1188
+99909 pointing -0,-5   	      # birdies=1188
 
-100232  -0 -5?
-100233  -0 -5
-100235  -0 -5
-100236  -0 -5
-100240  -0  -5? some wavies - discard
-100241  -0  discard
-100243  -0 -5?
-100244  -0 -5?
-100248  -0 ok
-100249  -0 -5?- di
+100232  -0 -5?   	      # birdies=1188
+100233  -0 -5   	      # birdies=1188
+100235  -0 -5   	      # birdies=1188
+100236  -0 -5   	      # birdies=1188
+100240  -5? wavies - BAD      # birdies=1188
+100241  -0  BAD   	      # birdies=1188
+100243  -0 -5?   	      # birdies=1188
+100244  -0 -5?   	      # birdies=1188
+100248  -0 ok                 # birdies=1188
+
+100249  -0 -5?- di                         # birdies=1189
+
+100611   .  				   # birdies=1189
+100612   .  				   # birdies=1189
+100614   .  				   # birdies=1189
+100615   .  				   # birdies=1189
+100617   .  				   # birdies=1189
+100618   .  				   # birdies=1189
+100622   .  				   # birdies=1189
+100623   .  				   # birdies=1189
+100625   .  				   # birdies=1189
+100626   .  				   # birdies=1189
 
 99000_99036 Night-1 ok
 99382_99399 Night-2 ok
